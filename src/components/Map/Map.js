@@ -52,7 +52,7 @@ const Map = ({ coords, places, setCoords, setBounds, setChildClicked, weatherDat
             <img src={`http://openweathermap.org/img/w/${data.weather[0].icon}.png`} height="70px" />
           </div>
         ))}
-      </GoogleMapReact>
+      </GoogleMapReact >
     </div>
   );
 };

@@ -9,13 +9,13 @@ const Header = ({ onPlaceChanged, onLoad }) => {
   const classes = useStyles();
 
   return (
-    <AppBar position="static">
-      <Toolbar className={classes.toolbar}>
-        <Typography variant="h5" className={classes.title}>
+    <AppBar style={{background: "#121212"}}  position="fixed">
+      <Toolbar  className={classes.toolbar}>
+        <Typography variant="h5" style={{fontSize: "1rem",fontWeight: "900"}} className={classes.title}>
           Travel Advisor
         </Typography>
         <Box display="flex">
-          <Typography variant="h6" className={classes.title}>
+          <Typography variant="h6" style={{fontSize: "0.8rem",fontWeight: "900",marginTop: "6px",marginRight: "-10px"}} className={classes.title}>
             Explore new places
           </Typography>
           <Autocomplete onLoad={onLoad} onPlaceChanged={onPlaceChanged}>

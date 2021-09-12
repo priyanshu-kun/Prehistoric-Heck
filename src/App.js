@@ -63,7 +63,7 @@ const App = () => {
     <>
       <CssBaseline />
       <Header onPlaceChanged={onPlaceChanged} onLoad={onLoad} />
-      <Grid container spacing={3} style={{ width: '100%' }}>
+      <Grid container spacing={3} style={{ width: '100%',marginTop: "3rem" }}>
         <Grid item xs={12} md={4}>
           <List
             isLoading={isLoading}
